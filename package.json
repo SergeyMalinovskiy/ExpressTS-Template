@@ -1,0 +1,35 @@
+{
+  "name": "express-ts-template",
+  "version": "1.0.0",
+  "description": "Express Typescript development application template. ",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SergeyMalinovskiy/ExpressTS-Template.git"
+  },
+  "scripts": {
+    "dev": "nodemon --watch src/** --ext ts,json --ignore src/**/*.spec.ts --exec ts-node src/server.ts",
+    "start": "ts-node dist/server.ts",
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "hbs": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.9",
+    "@types/express-handlebars": "^3.1.0",
+    "@types/hbs": "^4.0.1",
+    "@types/node": "^14.14.8",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  }
+}
